@@ -2,7 +2,7 @@ import ListGroup from "./components/ListGroup";
 import { ButtonHTMLAttributes } from "react";
 
 function App() {
-  const items = ["New Yor", "San Francisco", "Paris", "Tokyo"];
+  const items = ["New York", "San Francisco", "Paris", "Tokyo"];
 
   return (
     <>
