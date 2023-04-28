@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #d68bcf;
+    background-color: #5F9EA0;
 }
 
 .chat-container {
@@ -41,7 +41,7 @@ body {
 }
 
 button {
-    background-color: #de5ed2;
+    background-color: #483D8B;
     color: white;
     border: none;
     border-radius: 5px;

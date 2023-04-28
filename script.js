@@ -1,10 +1,24 @@
-document.getElementById("chat-form").addEventListener("submit", function (event) {
+function addChatBubble(message, type)
+{
+    const chatBubble = document.createElemnt("div");
+    chatBubble.classList.add("chat-bubble", type);
+    chatBubble.textContent= message;
+
+    const chatBox = document.getElementById("chat-box");
+    chatBox.appendChild(chatBubble);
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+
+
+document.getElementById("chat-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
     const messageInput = document.getElementById("message-input");
     const message = messageInput.value.trim();
 
-    if (message !== "") {
+    if (message !== "")
+    {
         addChatBubble(message, "user");
 
         // TODO: Add API or bot integration here
@@ -13,16 +27,10 @@ document.getElementById("chat-form").addEventListener("submit", function (event)
             addChatBubble("Hello, I am your support bot. How may I help you?", "bot");
         }, 1000);
     }
+    messaageInput.value;
+})
 
-    messageInput.value = "";
-});
 
-function addChatBubble(message, type) {
-    const chatBubble = document.createElement("div");
-    chatBubble.classList.add("chat-bubble", type);
-    chatBubble.textContent = message;
 
-    const chatBox = document.getElementById("chat-box");
-    chatBox.appendChild(chatBubble);
-    chatBox.scrollTop = chatBox.scrollHeight;
-}
+
+
